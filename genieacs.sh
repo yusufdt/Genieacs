@@ -174,14 +174,14 @@ fi
 
 mkdir /root/db
 cd /root/db
-wget https://github.com/beryindo/genieacs/raw/refs/heads/main/config.bson
-wget https://github.com/beryindo/genieacs/raw/refs/heads/main/config.metadata.json
-wget https://github.com/beryindo/genieacs/raw/refs/heads/main/presets.bson
-wget https://github.com/beryindo/genieacs/raw/refs/heads/main/presets.metadata.json
-wget https://github.com/beryindo/genieacs/raw/refs/heads/main/provisions.bson
-wget https://github.com/beryindo/genieacs/raw/refs/heads/main/provisions.metadata.json
-wget https://github.com/beryindo/genieacs/raw/refs/heads/main/virtualParameters.bson
-wget https://github.com/beryindo/genieacs/raw/refs/heads/main/virtualParameters.metadata.json
+wget https://github.com/yusufdt/Genieacs/raw/refs/heads/main/config.bson
+wget https://github.com/yusufdt/Genieacs/raw/refs/heads/main/config.metadata.json
+wget https://github.com/yusufdt/Genieacs/raw/refs/heads/main/presets.bson
+wget https://github.com/yusufdt/Genieacs/raw/refs/heads/main/presets.metadata.json
+wget https://github.com/yusufdt/Genieacs/raw/refs/heads/main/provisions.bson
+wget https://github.com/yusufdt/Genieacs/raw/refs/heads/main/provisions.metadata.json
+wget https://github.com/yusufdt/Genieacs/raw/refs/heads/main/virtualParameters.bson
+wget https://github.com/yusufdt/Genieacs/raw/refs/heads/main/virtualParameters.metadata.json
 mongorestore --db genieacs --drop /root/db
 systemctl start genieacs-{cwmp,ui,nbi}
 
